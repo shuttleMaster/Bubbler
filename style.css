@@ -62,7 +62,8 @@ body {
 .bubble {
   width: 2.7rem;
   height: 2.7rem;
-  background-color: rgb(255, 173, 21);
+  /* background-color: rgb(255, 173, 21); */
+  /* background-color: #00a5e3; */
   border-radius: 50%;
   color: black;
   display: flex;

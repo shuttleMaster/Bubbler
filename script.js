@@ -1,7 +1,7 @@
 let time = 60;
 let val = 0;
 let score = 0;
-
+const colors = ["00FFFF", "ADFF2F", "FF96C5", "FC6C85", "FFBF65"];
 const updateScorePositive = () => {
   score += 10;
   document.querySelector("#score").textContent = score;
@@ -17,7 +17,8 @@ const makeBubbles = () => {
 
   for (let i = 0; i <= 79; i++) {
     let num = Math.floor(Math.random() * 10);
-    bubbles += `<div class="bubble">${num}</div>`;
+    let randomColor = colors[(Math.random() * colors.length) | 0];
+    bubbles += `<div class="bubble" style="background-color:#${randomColor}">${num}</div>`;
     console.log(bubbles);
   }
 
