@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 232, 127);
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.panal {
+  overflow: hidden;
+
+  width: 80%;
+  height: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+.panal-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14rem;
+  width: 100%;
+  height: 4.5rem;
+  background-color: rgb(255, 222, 37);
+}
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.elem h2 {
+  font-weight: 400;
+}
+.box {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.panal-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100% - 4.5rem);
+  /* gap: 10px */
+}
+.bubble {
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: rgb(255, 173, 21);
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+  cursor: pointer;
+}
